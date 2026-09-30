@@ -3,18 +3,182 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ottawa Culinary — Coming Soon</title>
-<meta name="robots" content="noindex">
+<title>Ottawa Culinary — News, People &amp; Opinions from Ottawa&#x27;s Kitchens</title>
+<meta name="description" content="Ottawa Culinary covers everything worth tasting in Ottawa: restaurant news, the people behind the city&#x27;s food, and opinions from its kitchens.">
+<link rel="canonical" href="https://ottawaculinary.com/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#F3F2EE">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ottawa Culinary">
+<meta property="og:title" content="Ottawa Culinary">
+<meta property="og:description" content="Ottawa Culinary covers everything worth tasting in Ottawa: restaurant news, the people behind the city&#x27;s food, and opinions from its kitchens.">
+<meta property="og:url" content="https://ottawaculinary.com/">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ottawa Culinary">
+<meta name="twitter:description" content="Ottawa Culinary covers everything worth tasting in Ottawa: restaurant news, the people behind the city&#x27;s food, and opinions from its kitchens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Ottawa Culinary",
+  "url": "https://ottawaculinary.com/",
+  "inLanguage": "en-CA",
+  "description": "News, people and opinions from Ottawa's kitchens.",
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Antheia is Ottawa's pick on Air Canada's Best New Restaurants shortlist",
+      "url": "https://ottawaculinary.com/antheia-best-new-restaurants-2026.html",
+      "datePublished": "2026-09-29"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Yannick La Salle wins the 2026 Kitchen Party Ottawa",
+      "url": "https://ottawaculinary.com/kitchen-party-2026-yannick-la-salle.html",
+      "datePublished": "2026-09-29"
+    }
+  ]
+}
+</script>
 <style>
-  body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f6f3ee;color:#222;font-family:Georgia,serif;text-align:center;padding:20px}
-  h1{font-weight:normal;font-size:clamp(28px,6vw,48px);margin:0 0 10px}
-  p{margin:0;color:#777;font-size:16px;letter-spacing:.08em;text-transform:uppercase}
+:root{--bg:#F3F2EE;--card:#FFFFFF;--ink:#1D1D1B;--soft:#8A8883;--line:#E6E4DE;--accent:#FF5A2D;
+--sage:#DDE5D6;--blush:#F6DCD3;--butter:#F5ECC8;--sky:#D9E4EE;--lilac:#E4DDEE;
+--r:22px;--shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.05)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1280px;margin:0 auto;padding:26px 32px}
+.logo{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:26px;letter-spacing:-.01em}
+.logo i{color:var(--accent);font-style:normal}
+.links{display:flex;gap:26px;font-size:15px;color:var(--soft)}
+.links a:hover{color:var(--ink)}
+.meta{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--soft)}
+.k{display:inline-flex;align-items:center;gap:6px}
+.k::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--dot,var(--accent))}
+footer{max-width:1280px;margin:0 auto;padding:30px 32px 50px;display:flex;justify-content:space-between;align-items:center;color:var(--soft);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:700px){nav{padding:20px 18px}.links{gap:16px;font-size:14px}footer{padding:24px 18px 40px}}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+
+.intro{max-width:880px;margin:0 auto;padding:70px 32px 46px;text-align:center}
+.intro h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(44px,7vw,88px);line-height:1;letter-spacing:-.02em}
+.intro h1 em{color:var(--accent)}
+.intro p{margin:22px auto 0;max-width:480px;color:var(--soft);font-size:17px}
+.search{margin:36px auto 0;max-width:520px;display:flex;align-items:center;gap:12px;background:var(--card);border-radius:999px;padding:15px 22px;box-shadow:var(--shadow)}
+.search svg{flex:0 0 18px;color:var(--soft)}
+.search input{border:none;outline:none;background:none;font:inherit;font-size:16px;width:100%;color:var(--ink)}
+.search input::placeholder{color:var(--soft)}
+.search input::-webkit-search-cancel-button{display:none}
+.chips{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-size:14px;padding:7px 14px;border-radius:999px;background:transparent;border:1px solid var(--line);color:var(--soft);cursor:pointer;font-family:inherit}
+.chip[aria-pressed="true"],.chip:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.board{max-width:1280px;margin:0 auto;padding:10px 32px 70px;display:flex;gap:22px;align-items:flex-start}
+.col{flex:1;display:flex;flex-direction:column;gap:22px;min-width:0}
+.c{display:block;background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.c:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(0,0,0,.05),0 16px 36px rgba(0,0,0,.08)}
+.c[hidden]{display:none}
+.story .img{aspect-ratio:4/3;background:var(--tone)}
+.story .b{padding:20px 22px 22px}
+.story h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:30px;line-height:1.08;letter-spacing:-.01em;margin:10px 0 8px}
+.story.lead h2{font-size:38px}
+.story p{color:var(--soft);font-size:15px}
+.new{display:inline-block;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:#fff;background:var(--accent);border-radius:999px;padding:3px 10px;vertical-align:middle;margin-bottom:6px}
+.quote{padding:28px 26px 22px;background:var(--tone)}
+.quote blockquote{font-family:'Instrument Serif',Georgia,serif;font-size:30px;line-height:1.12;letter-spacing:-.01em;margin-bottom:18px}
+.quote blockquote::before{content:"\201C";display:block;font-size:62px;line-height:.6;color:var(--accent);margin-bottom:6px}
+.note{padding:22px 24px}
+.note p{font-size:17px;margin:12px 0 4px}
+.note .go{font-size:14px;color:var(--accent);font-weight:500}
+.stat{padding:26px 24px 22px}
+.stat b{display:block;font-family:'Instrument Serif',serif;font-weight:400;font-size:86px;line-height:.9;letter-spacing:-.03em;color:var(--accent);margin:8px 0}
+.stat p{font-size:15px;color:var(--soft)}
+.empty{text-align:center;color:var(--soft);padding:10px 0 60px}
+.about{max-width:620px;margin:0 auto 70px;padding:0 24px;text-align:center}
+.about h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:36px;margin-bottom:10px}
+.about p{color:var(--soft);font-size:17px}
+@media (max-width:700px){.intro{padding:44px 18px 30px}.board{padding:6px 16px 50px}.story.lead h2{font-size:34px}}
 </style>
 </head>
 <body>
-  <div>
-    <h1>Ottawa Culinary</h1>
-    <p>Coming soon</p>
+<nav><a href="/" class="logo">ottawa culinary<i>.</i></a><div class="links"><a href="/">stories</a><a href="/#about">about</a></div></nav>
+<header class="intro">
+  <h1>everything worth <em>tasting</em> in ottawa.</h1>
+  <p>news, people and opinions from the city's kitchens. no ads, no listicles, no hype.</p>
+  <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+  <input type="search" id="q" placeholder="search stories, chefs, neighbourhoods…" aria-label="search stories"></label>
+  <div class="chips" role="group" aria-label="filter stories">
+    <button class="chip" data-f="all" aria-pressed="true">all</button><button class="chip" data-f="news" aria-pressed="false">news</button><button class="chip" data-f="people" aria-pressed="false">people</button><button class="chip" data-f="opinion" aria-pressed="false">opinion</button>
   </div>
+</header>
+<!-- Cards are listed newest first. The script arranges them left to right into columns. -->
+<main class="board" id="board">
+<div class="col" id="src">
+<a class="c story lead" href="antheia-best-new-restaurants-2026.html" data-type="news" data-text="antheia briana kim air canada best new restaurants enroute finalist somerset vegetarian tasting menu fermentation" style="--tone:#DDE5D6">
+  <div class="img"></div>
+  <div class="b"><div class="meta"><span class="k" style="--dot:#6E9B6A">news</span><time datetime="2026-09-29">sept 29, 2026</time></div>
+  <h2><span class="new">new</span><br>Antheia is Ottawa's pick on Air Canada's Best New Restaurants shortlist</h2><p>The only Ottawa name among 30 national finalists, in the award's 25th year. The top 10 is revealed November 16.</p></div>
+</a>
+<a class="c stat" href="antheia-best-new-restaurants-2026.html" data-type="news" data-text="antheia briana kim air canada best new restaurants enroute finalist somerset vegetarian tasting menu fermentation">
+  <div class="meta"><span class="k" style="--dot:#6E9B6A">news</span><span>sept 29</span></div><b>30</b><p>finalists across Canada for Best New Restaurants 2026, and Antheia is Ottawa's only one.</p></a>
+<a class="c note" href="antheia-best-new-restaurants-2026.html" data-type="news" data-text="antheia briana kim air canada best new restaurants enroute finalist somerset vegetarian tasting menu fermentation">
+  <div class="meta"><span class="k" style="--dot:#6E9B6A">news</span><span>sept 29</span></div><p>The Top 10 is revealed November 16 in Toronto. Antheia is the only Ottawa restaurant still in the running.</p><span class="go">read →</span></a>
+<a class="c story" href="kitchen-party-2026-yannick-la-salle.html" data-type="news" data-text="yannick la salle lasalle kitchen party ottawa great kitchen party canadian culinary championship supreme court sweetbreads carswell sawision stofa raphael" style="--tone:#F6DCD3">
+  <div class="img"></div>
+  <div class="b"><div class="meta"><span class="k" style="--dot:#6E9B6A">news</span><time datetime="2026-09-29">sept 29, 2026</time></div>
+  <h2>Yannick La Salle wins the 2026 Kitchen Party Ottawa</h2><p>A 20th-anniversary all-star field, veal sweetbreads for gold, and a new two-chef team format for nationals this January.</p></div>
+</a>
+<a class="c quote" href="kitchen-party-2026-yannick-la-salle.html" data-type="news" data-text="yannick la salle lasalle kitchen party ottawa great kitchen party canadian culinary championship supreme court sweetbreads carswell sawision stofa raphael" style="--tone:#F5ECC8">
+  <blockquote>For the first time, the region won't send one chef to nationals. It will send a team.</blockquote><div class="meta"><span class="k" style="--dot:#1D1D1B">from: the kitchen party</span><span>sept 29</span></div></a>
+<a class="c stat" href="kitchen-party-2026-yannick-la-salle.html" data-type="news" data-text="yannick la salle lasalle kitchen party ottawa great kitchen party canadian culinary championship supreme court sweetbreads carswell sawision stofa raphael">
+  <div class="meta"><span class="k" style="--dot:#6E9B6A">news</span><span>sept 29</span></div><b>Jan 29</b><p>The Canadian Culinary Championship comes to Ottawa, January 29–30, 2027.</p></a>
+</div>
+</main>
+<p class="empty" id="empty" hidden>nothing here yet. try another search.</p>
+<section class="about" id="about"><h2>about</h2><p>ottawa culinary is an independent publication about the city's food: what's opening, who's cooking, what's winning, and what we think about all of it. we post when there's something worth saying.</p></section>
+<footer><span class="logo" style="font-size:20px">ottawa culinary<i>.</i></span><span>made in ottawa · © <span id="yr">2026</span></span></footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+(function(){
+  var board=document.getElementById('board'), src=document.getElementById('src');
+  var cards=[].slice.call(src.querySelectorAll('.c')), q=document.getElementById('q'), empty=document.getElementById('empty');
+  var filter='all', lastN=0;
+  function cols(){var w=window.innerWidth; return w<700?1:(w<1060?2:3);}
+  function layout(force){
+    var n=cols(); if(n===lastN && !force) return; lastN=n;
+    board.innerHTML=''; var cs=[];
+    for(var i=0;i<n;i++){var d=document.createElement('div');d.className='col';board.appendChild(d);cs.push(d);}
+    var vis=cards.filter(function(c){return !c.hidden;});
+    vis.forEach(function(c){ var t=cs[0]; cs.forEach(function(x){ if(x.offsetHeight<t.offsetHeight) t=x; }); t.appendChild(c); });
+    cards.filter(function(c){return c.hidden;}).forEach(function(c){cs[0].appendChild(c);});
+    empty.hidden = vis.length>0;
+  }
+  function apply(){
+    var s=(q.value||'').toLowerCase().trim();
+    cards.forEach(function(c){
+      var okF = filter==='all' || c.dataset.type===filter;
+      var okS = !s || (c.dataset.text+' '+c.textContent).toLowerCase().indexOf(s)>-1;
+      c.hidden = !(okF && okS);
+    });
+    layout(true);
+  }
+  document.querySelectorAll('.chip').forEach(function(b){
+    b.addEventListener('click',function(){
+      filter=b.dataset.f;
+      document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed', x===b?'true':'false');});
+      apply();
+    });
+  });
+  q.addEventListener('input',apply);
+  window.addEventListener('resize',function(){layout(false);});
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){layout(true);});
+  layout(true);
+})();
+</script>
 </body>
 </html>
